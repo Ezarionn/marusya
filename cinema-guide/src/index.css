@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Play';
+  src: url('/fonts/Play-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Play';
+  src: url('/fonts/Play-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Play', sans-serif;
+  background:
+    linear-gradient(0deg, rgba(39, 135, 245, 0.9) 0%, rgba(163, 147, 245, 0.9) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(39, 36, 36, 0.7) 100%);
+  background-blend-mode: multiply;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  font-family: 'Play', sans-serif;
+  text-decoration: none;
+}
+
+button {
+  font-family: 'Play', sans-serif;
+}
+
+.blue-button {
+  padding: 18px 48px;
+  border: none;
+  border-radius: 28px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #67A5EB;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.blue-button:disabled {
+  color: #8c909b;
+  background-color: #45526E;
+}
+
+.blue-button:hover,
+.blue-button:focus,
+.blue-button:focus-visible {
+  background-color: #3086e9;
+}
+
+.dark-button {
+  border: 1px solid #18191a;
+  border-radius: 28px;
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: #393B3C;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.dark-button:hover,
+.dark-button:focus,
+.dark-button:focus-visible {
+  background-color: #464849;
+}
+
+.error-container {
+  max-width: 260px;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #FF7575;
+  border-radius: 12px;
+  background-color: #f1cece;
+  text-align: center;
+}
+
+.error-message {
+  margin: 0;
+}
+
+.error-refetch-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid #FF7575;
+  border-radius: 12px;
+  transition: all .3s ease-in-out;
+}
+
+.error-refetch-btn:hover,
+.error-refetch-btn:focus,
+.error-refetch-btn:focus-visible {
+  border: 1px solid #f75252;
+  background-color: #f1bebe;
+}

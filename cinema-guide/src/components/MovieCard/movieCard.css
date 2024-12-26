@@ -1,0 +1,174 @@
+.movie-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 41px;
+  color: #FFFFFF;
+}
+
+.movie-img-container {
+  max-width: 680px;
+  width: 100%;
+  height: 552px;
+}
+
+.movie-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.movie-details {
+  max-width: 570px;
+  align-self: center;
+  margin-right: 30px;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: #929395;
+}
+
+.movie-title {
+  margin-bottom: 16px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.movie-descr {
+  margin-bottom: 60px;
+  font-size: 24px;
+  line-height: 32px;
+  color: #929395;
+}
+
+.random-movie__buttons-container,
+.about-movie__buttons-container {
+  display: flex;
+  align-items: start;
+}
+
+.card-about-button {
+  margin-right: 16px;
+  padding: 17px 47px;
+  font-weight: 700;
+}
+
+.card-small-button {
+  margin-right: 16px;
+  padding: 15px 21px 12px;
+}
+
+.card-small-button:last-child {
+  margin-right: 0;
+}
+
+.random-movie__trailer-btn,
+.about-movie__trailer-btn {
+  margin-right: 17px;
+}
+
+@media(max-width: 1300px) {
+
+  .movie-img-container {
+    display: flex;
+    align-items: center;
+    max-height: 552px;
+    height: auto;
+  }
+
+  .movie-img {
+    height: auto;
+  }
+
+}
+
+@media(max-width: 1200px) {
+
+  .movie-card {
+    flex-direction: column-reverse;
+    margin-bottom: 60px;
+  }
+
+  .movie-details {
+    max-width: 100%;
+    align-self: normal;
+    margin: 0;
+  }
+
+  .movie-img-container {
+    justify-content: center;
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .movie-img {
+    max-width: 80%;
+  }
+
+}
+
+@media(max-width: 650px) {
+
+  .random-movie__buttons-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .random-movie__trailer-btn {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+}
+
+@media(max-width: 550px) {
+
+  .movie-title {
+    font-size: 24px;
+  }
+
+  .about-movie__title {
+    margin-bottom: 14px;
+  }
+
+  .movie-descr {
+    margin-bottom: 27px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .about-movie__descr {
+    margin-bottom: 30px;
+  }
+
+  .movie-img-container {
+    margin-bottom: 23px;
+  }
+
+  .movie-img {
+    max-width: 100%;
+    height: 234px;
+  }
+
+  .about-movie__trailer-btn {
+    width: 100%;
+  }
+
+  .card-about-button {
+    padding: 17px 39px;
+  }
+
+  .about-movie__movie-img {
+    height: 260px;
+  }
+
+}

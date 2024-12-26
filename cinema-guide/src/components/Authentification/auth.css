@@ -1,0 +1,133 @@
+.auth__logo {
+  margin-bottom: 36px;
+}
+
+.auth__logo img {
+  width: 132px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form input:last-of-type {
+  margin-bottom: 24px;
+}
+
+.auth-input-style {
+  width: 270px;
+  padding: 16px 16px 16px 52px;
+  border: 1px solid #929395;
+  border-radius: 8px;
+  font-family: 'Play', sans-serif;
+  font-size: 18px;
+  color: #000000;
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  transition: all .3s ease-in-out;
+}
+
+.auth-input-style::placeholder {
+  color: #929395;
+}
+
+.auth-input-style:focus,
+.auth-input-style:focus-visible {
+  outline: none;
+}
+
+.auth-input-style:focus,
+.auth-input-style:focus-visible,
+.auth-input-style:hover {
+  border-color: #B4A9FF;
+}
+
+.auth-input-email {
+  margin-bottom: 13px;
+  background-image: url('/email.png');
+}
+
+.auth-input-email:hover,
+.auth-input-email:focus,
+.auth-input-email:focus-visible {
+  background-image: url('/email-hover.png');
+}
+
+.auth-input-email.warning-input-style:not(:hover) {
+  background-image: url('/email-error.png');
+}
+
+.auth-input-password {
+  margin-bottom: 13px;
+  background-image: url('/password.png');
+}
+
+.auth-input-password:hover,
+.auth-input-password:focus,
+.auth-input-password:focus-visible {
+  background-image: url('/password-hover.png');
+}
+
+.auth-input-password.warning-input-style:not(:hover) {
+  background-image: url('/password-error.png');
+}
+
+.auth-input-name {
+  margin-bottom: 13px;
+  background-image: url('/name.png');
+}
+
+.auth-input-name:hover,
+.auth-input-name:focus,
+.auth-input-name:focus-visible {
+  background-image: url('/name-hover.png');
+}
+
+.auth-input-name.warning-input-style:not(:hover) {
+  background-image: url('/name-error.png');
+}
+
+.auth-submit-btn {
+  align-self: normal;
+  margin-bottom: 17px;
+}
+
+.btn__switch-mode {
+  padding: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.warning-style {
+  margin: 0;
+  margin-top: -8px;
+  margin-bottom: 15px;
+  color: #FF7575;
+}
+
+.auth-form p:last-of-type {
+  margin-top: -19px;
+}
+
+.warning-input-style {
+  border: 1px solid #FF7575;
+}
+
+.registration__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.registration__subtitle {
+  margin: 0;
+  margin-bottom: 27px;
+  font-size: 18px;
+  font-weight: 400;
+}

@@ -1,0 +1,40 @@
+.rating {
+  display: flex;
+  align-items: baseline;
+  border-radius: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #A59400;
+}
+
+.rating--search {
+  margin-right: 13px;
+  padding: 3px 8px;
+}
+
+.rating--card {
+  margin-right: 15px;
+  padding: 5px 13px;
+}
+
+.rating__img--search {
+  width: 10px;
+  height: 10px;
+  margin-right: 4px;
+  padding: 0;
+}
+
+.rating__img--card {
+  width: 15px;
+  height: 15px;
+  margin-right: 4px;
+  padding: 0;
+}
+
+.rating__number--search {
+  font-size: 12px;
+}
+
+.rating__number--card {
+  font-size: 18px;
+}
