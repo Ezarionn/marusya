@@ -26,7 +26,7 @@ export const Modal = () => {
     if (isOpen) {
       document.body.classList.add('stop-scroll');
       if (currentWidth > 1000) {
-        document.body.style.marginRight = '17px'
+        document.body.style.paddingRight = '17px'
       }
     } else {
       document.body.classList.remove('stop-scroll');

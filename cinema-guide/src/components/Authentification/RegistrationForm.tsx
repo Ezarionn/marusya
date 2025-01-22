@@ -7,7 +7,7 @@ import { useRegister } from "../../hooks/useAuth";
 const RegisterUserSchema = z.object({
   email: z.string().email('Введите корректный email'),
   name: z.string().min(5, "Имя пользователя должно содержать как минимум 5 символов"),
-  surname: z.string().min(5, "Фамилия пользователя должно содержать как минимум 5 символов"),
+  surname: z.string().min(5, "Фамилия пользователя должна содержать как минимум 5 символов"),
   password: z.string().min(8, "Пароль должен содержать как минимум 8 символов"),
   confirmPassword: z.string().min(8, "Пароль должен содержать как минимум 8 символов")
 })
@@ -44,7 +44,6 @@ export const RegistrationForm = ({ onSuccessfulRegistration }) => {
   useEffect(() => {
     reset()
     if (status === 'success') {
-      console.log(isRegistered)
       setIsRegistered(true)
       onSuccessfulRegistration()
     }
