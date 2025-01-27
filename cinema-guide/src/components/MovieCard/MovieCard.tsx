@@ -15,7 +15,7 @@ import { useRemoveFromFavorites } from "../../hooks/useRemoveFromFavorites"
 import { useGetMovieById } from "../../hooks/useGetMovieById"
 import { LikeIcon } from "../../assets/icons/like"
 import { ShuffleIcon } from "../../assets/icons/shuffle"
-import './MovieCard.css'
+import './movieCard.css'
 
 export const MovieCard = ({ type }) => {
 
